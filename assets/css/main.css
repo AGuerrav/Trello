@@ -1,0 +1,101 @@
+body{
+   background-color: #5499c7;
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+.logo{
+  width: 150px;
+  height: 45px;
+  margin-left: 43%;
+}
+.div-logo{
+  background-color: #0d47a1;
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  line-height: 45px;
+  overflow: auto;
+  color: white;
+}
+nav ul li{
+
+  display: inline-block;
+  text-align: center;
+}
+nav ul li i{
+  margin-left: 30px;
+}
+nav ul li h4{
+  margin-left: 10px;
+}
+#boton1{
+  margin-left: 40px;
+  padding: 10px 15px;
+	background: #4479BA;
+	color: #FFF;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 15px;
+}
+.divcontenedor1{
+  background-color: beige;
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  margin-left: 40px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+}
+.input1{
+  line-height: 35px;
+  font-size: 15px;
+  width: 280px;
+  border: none;
+  border-radius: 5px;
+
+}
+.guardarLista{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 19px;
+  color: white;
+  margin: 10px 0;
+
+}
+.divcontenedor2{
+  background-color: beige;
+  display: inline-block;
+  width: 300px;
+  height: 100%;
+  margin-left: 40px;
+  top: 5px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-sizing:border-box;
+  position: relative;
+  top: 0px;
+}
+.textarea{
+  font-size: 15px;
+  width: 280px;
+  border: none;
+  border-radius: 5px;
+
+}
+.botonAñadir{
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 19px;
+  color: white;
+  margin: 4px 0;
+
+}
