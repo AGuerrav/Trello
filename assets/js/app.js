@@ -70,19 +70,26 @@ document.getElementById('boton1').addEventListener('click', function () {
         var añadirLista = document.getElementsByClassName('textarea')[0].value;
         document.getElementsByClassName('textarea')[0].value = "";
         //console.log(añadirLista);
-        //elimino textarea
+        //elimino textarea y boton
         divcontenedor2.removeChild(textarea);
+        divcontenedor2.removeChild(botonAdd);
         //creo un div con la info de textarea
         var contenedor3 = document.createElement('div');
         contenedor3.classList.add('class', 'contenedor3');
         var tarea = document.createElement('p');
         tarea.classList.add('class', 'tarea');
         var textoTarea = document.createTextNode(añadirLista);
-
-        //asigno padres
+        //asigno padres e ingreso el boton nuevamente
         divcontenedor2.appendChild(contenedor3);
         contenedor3.appendChild(tarea);
         tarea.appendChild(textoTarea);
+        divcontenedor2.appendChild(textarea);
+        divcontenedor2.appendChild(botonAdd);
+
+
+
+
+
 
       })
 
