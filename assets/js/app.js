@@ -17,11 +17,19 @@ document.getElementById('boton1').addEventListener('click', function () {
   var boton2 =document.createElement('button');
   var textBoton2= document.createTextNode('Guardar');
   boton2.classList.add('class', 'guardarLista')
+  //creo la "x" que va al lado del boton guardar y le doy atributos y clase
+  var equis =document.createElement('i');
+  equis.setAttribute('aria-hidden', 'true');
+  equis.classList.add('class','fa', 'fa-times');
+
+
   //asigno padre a lo creado
   padre.appendChild(divcontenedor1);
   divcontenedor1.appendChild(input1);
   divcontenedor1.appendChild(boton2);
+  divcontenedor1.appendChild(equis);
   boton2.appendChild(textBoton2);
+
     //guardo lo que escribio el usuario para usarlo luego
   boton2.addEventListener('click',function(){
     var nombreLista = document.getElementsByClassName('input1')[0].value;
@@ -61,18 +69,22 @@ document.getElementById('boton1').addEventListener('click', function () {
       var botonAdd = document.createElement('button');
       botonAdd.classList.add('class', 'botonAñadir')
       var textBotonAdd= document.createTextNode('Añadir')
+      equis;
       //Asigno padres correspondientes
       divcontenedor2.appendChild(textarea);
       divcontenedor2.appendChild(botonAdd);
+      divcontenedor2.appendChild(equis);
       botonAdd.appendChild(textBotonAdd);
+
 
       botonAdd.addEventListener('click',function(){
         var añadirLista = document.getElementsByClassName('textarea')[0].value;
         document.getElementsByClassName('textarea')[0].value = "";
         //console.log(añadirLista);
-        //elimino textarea y boton
+        //elimino textarea, boton y equis
         divcontenedor2.removeChild(textarea);
         divcontenedor2.removeChild(botonAdd);
+        divcontenedor2.removeChild(equis);
         //creo un div con la info de textarea
         var contenedor3 = document.createElement('div');
         contenedor3.classList.add('class', 'contenedor3');
@@ -85,6 +97,7 @@ document.getElementById('boton1').addEventListener('click', function () {
         tarea.appendChild(textoTarea);
         divcontenedor2.appendChild(textarea);
         divcontenedor2.appendChild(botonAdd);
+        divcontenedor2.appendChild(equis);
 
 
 

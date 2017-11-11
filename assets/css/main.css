@@ -72,7 +72,7 @@ nav ul li h4{
 }
 .divcontenedor2{
   background-color: beige;
-  display: inline-block;
+  float: left;
   width: 300px;
   height: 100%;
   margin-left: 40px;
@@ -102,5 +102,11 @@ nav ul li h4{
 .tarea{
 
   background-color:  #fef9e7 ;
+
+}
+.fa-times{
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
 
 }
