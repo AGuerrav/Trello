@@ -11,6 +11,7 @@ document.getElementById('boton1').addEventListener('click', function () {
   var input1 = document.createElement('input');
   input1.setAttribute('type', 'text');
   input1.setAttribute('placeholder', 'Añadir una lista...');
+  input1.setAttribute('autofocus', 'true');
   input1.classList.add('class', 'input1');
   input1.value;
   //creo mi boton que guarda la info del formulario
@@ -61,10 +62,11 @@ document.getElementById('boton1').addEventListener('click', function () {
 
       //creo textarea
       var textarea = document.createElement('textarea');
-      textarea.setAttribute('rows', '')
-      textarea.setAttribute('cols', '')
-
+      textarea.setAttribute('rows', '');
+      textarea.setAttribute('cols', '');
       textarea.classList.add('class', 'textarea');
+      textarea.setAttribute('autofocus','true');
+
       //creo boton Añadir
       var botonAdd = document.createElement('button');
       botonAdd.classList.add('class', 'botonAñadir')
