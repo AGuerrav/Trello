@@ -93,7 +93,7 @@ document.getElementById('boton1').addEventListener('click', function () {
         var tarea = document.createElement('p');
         tarea.classList.add('class', 'tarea');
         var textoTarea = document.createTextNode(añadirLista);
-        //asigno padres e ingreso el boton nuevamente
+        //asigno padres e ingreso el boton nuevamente y equis
         divcontenedor2.appendChild(contenedor3);
         contenedor3.appendChild(tarea);
         tarea.appendChild(textoTarea);
